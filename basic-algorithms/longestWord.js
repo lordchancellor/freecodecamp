@@ -1,6 +1,11 @@
+/*
+Return the length of the longest word in the provided sentence.
+
+Your response should be a number.
+*/
+
 function findLongestWord(str) {
     var checker = str.split(" ");
-    console.log(checker);
     
     var longestWord = "";
     
@@ -10,6 +15,8 @@ function findLongestWord(str) {
         }
     }
     
-    console.log(longestWord);
-    console.log(longestWord.length);
+    console.log(longestWord + " - " + longestWord.length);
+    return longestWord.length;
 }
+
+findLongestWord("Once upon a time there was a man named Jorge.");

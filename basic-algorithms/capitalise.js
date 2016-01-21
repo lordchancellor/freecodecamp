@@ -1,3 +1,9 @@
+/*
+Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+
+For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
+*/
+
 function titleCase(str) {
     var words = str.toLowerCase().split(" ");
     var characters = [];
@@ -12,3 +18,5 @@ function titleCase(str) {
     
     return words.join(" ");
 }
+
+titleCase("Ladies and Gentlemen, I present to you, the magic of Zatanna!");
