@@ -1,5 +1,12 @@
 /***************************************
 ** Primary Stylesheet for Sandbox 3.0 **
 ***************************************/
+.well {
+  min-height: 150px; }
+
+.quoteBtn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */

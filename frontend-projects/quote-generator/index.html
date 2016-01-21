@@ -5,13 +5,13 @@
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="author" content="Christopher Ford">
-		
+
 		<title>Quote Generator</title>
-		
+
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
-		
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 		<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -20,13 +20,26 @@
 	    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	    <![endif]-->
 	</head>
-	
+
 	<body>
 		<div class="container">
-			<h1>Quote Generator</h1>
-			
+			<div class="col-sm-12">
+				<h1>Quote Generator</h1>
+
+				<p class="lead">Who doesn't love a good movie quote? Click the button for a random quote; bonus points if you can guess which movie it's from.</p>
+				<p>Like the quote? Why not tweet it for your followers to enjoy?</p>
+			</div>
+
+			<div class="well col-sm-8 col-sm-offset-2">
+				<blockquote id="quote"></blockquote>
+				<cite id="cite"></cite>
+			</div>
+
+			<div class="col-sm-12">
+				<button class="btn btn-lg btn-primary quoteBtn" role="button" onclick="quoteMe();">Quote Me!</button>
+			</div>
 		</div>
-		
+
 		<script src="js/main.js"></script>
 	</body>
 </html>

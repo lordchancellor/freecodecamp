@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA;;wCAEwC",
-"sources": ["sass/style.scss"],
+"mappings": "AAAA;;wCAEwC;ACAxC,KAAM;EACF,UAAU,EAAE,KAAK;;AAGrB,SAAU;ECHN,WAAW,EDIM,IAAI;ECHrB,YAAY,EDGK,IAAI;EACrB,OAAO,EAAE,KAAK",
+"sources": ["sass/style.scss","sass/partials/_main-page.scss","sass/modules/_mixins.scss"],
 "names": [],
 "file": "style.css"
 }

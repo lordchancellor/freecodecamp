@@ -1,0 +1,10 @@
+//MAIN PAGE STYLES
+
+.well {
+    min-height: 150px;
+}
+
+.quoteBtn {
+    @include marginX(auto);
+    display: block;
+}
