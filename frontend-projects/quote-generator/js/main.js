@@ -60,3 +60,8 @@ function quoteMe() {
     $('#cite').text(cite);
     $('.btn-twitter').removeClass('disabled');
 }
+
+function prepareTweet() {
+    var quote = $('#quote').text();
+    var cite = $('#cite').text();
+}
