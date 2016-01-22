@@ -1,10 +1,60 @@
 //MAIN PAGE STYLES
 
-.well {
-    min-height: 150px;
+h1,
+p {
+    text-align: center;
 }
 
-.quoteBtn {
-    @include marginX(auto);
-    display: block;
+h1 {
+    margin-bottom: 30px;
+}
+
+.well {
+    @include marginY(20px);
+    min-height: 195px;
+    background-color: $bgWell;
+    border-color: $mscBlue;
+    color: $darkText;
+    
+    blockquote {
+        border-left: none;
+        text-align: center;
+        font-weight: 400;
+        font-family: 'Niconne', serif;
+        font-size: 2.0rem;
+    }
+    
+    cite {
+        display: block;
+        text-align: center;
+        font-family: 'Handlee', serif;
+        font-size: 1.1rem;
+    }
+}
+
+.btnBlock {
+    text-align: center;
+    
+    .btnWrapper {
+        display: inline-block;
+
+        button {
+            &.quoteBtn {
+                margin-right: 5px;
+                
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            &.btn-twitter {
+                background: $twitter;
+                
+                &:hover,
+                &:focus {
+                    color: $whiteText;
+                }
+            }
+        }
+    }
 }

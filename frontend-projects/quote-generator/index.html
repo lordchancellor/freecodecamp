@@ -10,6 +10,7 @@
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Niconne|Handlee' rel='stylesheet' type='text/css'>
 		<link href="css/style.css" rel="stylesheet">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -24,9 +25,9 @@
 	<body>
 		<div class="container">
 			<div class="col-sm-12">
-				<h1>Quote Generator</h1>
+				<h1>TV &amp; Movie Quote Generator</h1>
 
-				<p class="lead">Who doesn't love a good movie quote? Click the button for a random quote; bonus points if you can guess which movie it's from.</p>
+				<p class="lead">Who doesn't love a good movie or TV quote? Click the button for a random quote; bonus points if you can guess which movie or TV show it's from.</p>
 				<p>Like the quote? Why not tweet it for your followers to enjoy?</p>
 			</div>
 
@@ -35,8 +36,13 @@
 				<cite id="cite"></cite>
 			</div>
 
-			<div class="col-sm-12">
-				<button class="btn btn-lg btn-primary quoteBtn" role="button" onclick="quoteMe();">Quote Me!</button>
+			<div class="col-sm-12 btnBlock">
+                <div class="btnWrapper">
+                    <button class="btn btn-lg btn-primary quoteBtn" role="button" onclick="quoteMe();">Quote Me!</button>
+
+                    <button class="btn btn-lg btn-twitter disabled" role="button">
+                        Tweet Me! <i class="fa fa-twitter"></i></button>
+                </div>
 			</div>
 		</div>
 

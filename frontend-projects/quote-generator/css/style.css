@@ -1,12 +1,50 @@
-/***************************************
-** Primary Stylesheet for Sandbox 3.0 **
-***************************************/
-.well {
-  min-height: 150px; }
+/*******************************************
+** Primary Stylesheet for Quote Generator **
+*******************************************/
+html {
+  font-size: 16px; }
 
-.quoteBtn {
-  margin-left: auto;
-  margin-right: auto;
-  display: block; }
+body {
+  background: #333333;
+  color: #ffffff; }
+
+h1,
+p {
+  text-align: center; }
+
+h1 {
+  margin-bottom: 30px; }
+
+.well {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  min-height: 195px;
+  background-color: #CAEEFF;
+  border-color: #40a9b5;
+  color: #333333; }
+  .well blockquote {
+    border-left: none;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Niconne', serif;
+    font-size: 2.0rem; }
+  .well cite {
+    display: block;
+    text-align: center;
+    font-family: 'Handlee', serif;
+    font-size: 1.1rem; }
+
+.btnBlock {
+  text-align: center; }
+  .btnBlock .btnWrapper {
+    display: inline-block; }
+    .btnBlock .btnWrapper button.quoteBtn {
+      margin-right: 5px; }
+      .btnBlock .btnWrapper button.quoteBtn:focus {
+        outline: none; }
+    .btnBlock .btnWrapper button.btn-twitter {
+      background: #55acee; }
+      .btnBlock .btnWrapper button.btn-twitter:hover, .btnBlock .btnWrapper button.btn-twitter:focus {
+        color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
