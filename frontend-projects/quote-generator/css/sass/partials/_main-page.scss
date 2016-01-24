@@ -53,6 +53,10 @@ h1 {
             color: $whiteText;
             border: 1px solid $twitBorder;
 
+            @media screen and (max-width: 768px) {
+                margin-top: 10px;
+            }
+
             &:hover,
             &:focus {
                 color: $whiteText;

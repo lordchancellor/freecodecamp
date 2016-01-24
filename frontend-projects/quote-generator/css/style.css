@@ -46,6 +46,9 @@ h1 {
       background: #55acee;
       color: #ffffff;
       border: 1px solid #3E7EAE; }
+      @media screen and (max-width: 768px) {
+        .btnBlock .btnWrapper a.btn-twitter {
+          margin-top: 10px; } }
       .btnBlock .btnWrapper a.btn-twitter:hover, .btnBlock .btnWrapper a.btn-twitter:focus {
         color: #ffffff;
         background: #4C9AD4; }
