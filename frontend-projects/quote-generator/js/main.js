@@ -50,6 +50,37 @@ var quotes = [
     }
 ];
 
+function prepareQuote() {
+    var quote = $('#quote').text();
+    var regEx = /\s/g;
+
+    quote = quote.replace(regEx, "%20");
+    quote = "\"".concat(quote);
+    quote = quote.concat("\"");
+
+    return quote;
+}
+
+function prepareCite() {
+    var cite = $('#cite').text();
+    var regEx = /\s/g;
+
+    cite = cite.replace(regEx, "%20");
+    return cite;
+}
+
+function prepareTweet() {
+    var quote = $('#quote').text();
+    var cite = $('#cite').text();
+    var href = "https://twitter.com/intent/tweet?text=";
+
+    href = href.concat(prepareQuote());
+    href = href.concat(" - ");
+    href = href.concat(prepareCite());
+
+    return href;
+}
+
 function quoteMe() {
     var random = Math.floor(Math.random() * quotes.length);
 
@@ -58,10 +89,6 @@ function quoteMe() {
 
     $('#quote').text(quote);
     $('#cite').text(cite);
+    $('.btn-twitter').attr("href", prepareTweet());
     $('.btn-twitter').removeClass('disabled');
-}
-
-function prepareTweet() {
-    var quote = $('#quote').text();
-    var cite = $('#cite').text();
 }

@@ -42,9 +42,25 @@ h1 {
       margin-right: 5px; }
       .btnBlock .btnWrapper button.quoteBtn:focus {
         outline: none; }
-    .btnBlock .btnWrapper button.btn-twitter {
-      background: #55acee; }
-      .btnBlock .btnWrapper button.btn-twitter:hover, .btnBlock .btnWrapper button.btn-twitter:focus {
-        color: #ffffff; }
+    .btnBlock .btnWrapper a.btn-twitter {
+      background: #55acee;
+      color: #ffffff;
+      border: 1px solid #3E7EAE; }
+      .btnBlock .btnWrapper a.btn-twitter:hover, .btnBlock .btnWrapper a.btn-twitter:focus {
+        color: #ffffff;
+        background: #4C9AD4; }
+      .btnBlock .btnWrapper a.btn-twitter:focus {
+        outline: none; }
+
+.btn-mf {
+  background: #40a9b5;
+  border: 1px solid #296D75;
+  color: #ffffff;
+  margin-top: 50px; }
+  .btn-mf:hover, .btn-mf:focus {
+    color: #ffffff;
+    background: #37919B; }
+  .btn-mf:focus {
+    outline: none; }
 
 /*# sourceMappingURL=style.css.map */
