@@ -47,6 +47,11 @@ var quotes = [
     {
         quote: "I say we get drunk, cause I'm all out of ideas.",
         cite: "Metatron"
+    },
+
+    {
+        quote: "I am the danger.",
+        cite: "Walter White"
     }
 ];
 
