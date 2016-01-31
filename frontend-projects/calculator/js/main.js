@@ -9,6 +9,7 @@ function clearDisplay() {
 //Execute the current chain of calculations, assuming that the chain has a valid end
 //(i.e. it ends in a number!)
 function executeChain() {
+    var current;    //Holds a running total
     //Check that the last item in the chain is a number
     if (isNaN(chain[chain.length-1])) {
         output = "Error";
