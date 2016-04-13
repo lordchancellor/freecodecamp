@@ -94,5 +94,5 @@ function toNumerals(arr) {
 }
 
 function convertToRoman(num) {
-    return toNumerals(splitNumber(num));c
+    return toNumerals(splitNumber(num));
 }
