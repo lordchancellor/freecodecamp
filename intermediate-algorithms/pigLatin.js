@@ -26,7 +26,6 @@ function getCluster(str) {
     return count;    
 }
 
-
 function translatePigLatin(str) {
     if (isVowel(str.charAt(0).toLowerCase())) {
         str += "way";
